@@ -1,0 +1,475 @@
+html {
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+/* * 顶部搜索 * */
+
+
+#top {
+    height: 168px;
+}
+
+/* 左边logo部分 */
+#top .logo {
+    width: 225px;
+    height: 75px;
+    float: left;
+    margin-top: 58px;
+}
+
+#top .logo a {
+    float: left;
+}
+
+#top .logo a img {
+    width: 75px;
+    height: 75px;
+}
+
+#top .logo .right {
+    width: 140px;
+    height: 56px;
+    float: right;
+    margin-top: 8px;
+}
+
+#top .logo .right h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #3d2109;
+}
+
+#top .logo .right span {
+    width: 140px;
+    height: 16px;
+    font-weight: 100;
+    display: inline-block;
+    transform: scale(0.8);
+    line-height: 17px;
+    color: #545044;
+}
+
+/* 中间搜索部分 */
+#top .top-search {
+    width: 532px;
+    height: 48px;
+    float: left;
+    margin-top: 69px;
+    margin-left: 108px;
+}
+
+#top .top-search .search {
+    width: 532px;
+    height: 48px;
+    border: 2px solid #39291c;
+    border-radius: 34px;
+}
+
+#top .top-search .search img {
+    width: 24px;
+    height: 24px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#top .top-search .search input {
+    width: 355px;
+    height: 48px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+#top .top-search .search .btn {
+    width: 120px;
+    height: 40px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 1px;
+    background-color: #fee44f;
+    text-align: center;
+    line-height: 40px;
+    color: #43200c;
+    border-radius: 34px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 右边品质部分 */
+#top .benefit {
+    width: 220px;
+    height: 60px;
+    float: right;
+    margin-top: 62px;
+    margin-right: 86px;
+    text-align: center;
+}
+
+#top .benefit ul li {
+    width: 48px;
+    height: 60px;
+    float: left;
+    margin-left: 24px;
+}
+
+#top .benefit ul li img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+#top .benefit ul li span {
+    transform: translateX(-50%);
+    color: #877a73;
+}
+
+
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 46px;
+    background-color: #43240c;
+}
+
+.nav ul li {
+    width: 220px;
+    height: 46px;
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+/* 主体内容 */
+/* 商品详情 */
+#main .mainTop{
+    width: 1400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#main .mainTop .productDetails {
+    width: 914px;
+    height: 352px;
+    position: relative;
+    top: 0;
+    right:0;
+    background-color: #fff;
+}
+#main .mainTop .productDetails .photo{
+    width: 282px;
+    height: 282px;
+    margin-top: 30px;
+}
+#main .mainTop .productDetails .photo img {
+    width: 282px;
+    height: 282px;
+    float: left;
+}
+
+#main .mainTop .productDetails .textInfo {
+    width: 534px;
+    height: 282px;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+
+}
+
+#main .mainTop .productDetails .textInfo h1 {
+    width: 534px;
+    height: 72px;
+    font-size: 20px;
+    color: #43240c;
+    line-height: 33px;
+    margin-top: 30px;
+}
+
+#main .mainTop .productDetails .textInfo .taobao :nth-child(1) {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 0;
+}
+
+#main .mainTop .productDetails .textInfo .taobao :nth-child(2) {
+    width: 42px;
+    height: 24px;
+    float: left;
+    margin-left: 5px;
+}
+
+#main .mainTop .productDetails .textInfo .productPrice {
+    width: 530px;
+    height: 87px;
+    font-weight: 400;
+    color: #b1a9a5;
+    line-height: 22px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+}
+
+#main .mainTop .productDetails .textInfo .productPrice .original-price {
+    text-decoration: line-through;
+    margin-top: 16px;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+#main .mainTop .productDetails .textInfo .productPrice .lastPrice {
+    width: 514px;
+    height: 37px;
+}
+
+#main .mainTop .productDetails .textInfo .productPrice .lastPrice :nth-child(1) {
+    font-size: 20px;
+    color: #ff4653;
+    line-height: 28px;
+    background-color: #f5f5f5;
+    margin-left: 16px;
+}
+
+#main .mainTop .productDetails .textInfo .productPrice .lastPrice :nth-child(2) {
+    font-size: 40px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600;
+    color: #fa585a;
+    line-height: 50px;
+}
+
+#main .mainTop .productDetails .textInfo .productPrice .lastPrice :nth-child(3) {
+    height: 16px;
+    display: inline-block;
+    background: #feeeee;
+    border-radius: 2px;
+    border: 1px solid #fa585a;
+    font-size: 12px;
+    text-align: center;
+    line-height: 17px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    vertical-align: middle;
+    color: #ff4653;
+}
+
+#main .mainTop .productDetails .textInfo .productPrice .lastPrice :nth-child(4) {
+    display: block;
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#main .mainTop .productDetails .textInfo .expire-data {
+    width: 164px;
+    height: 20px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fa585a;
+    line-height: 20px;
+}
+
+#main .mainTop .productDetails .textInfo .goCart-btn {
+    width: 224px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 11px;
+    margin-bottom: 39px;
+    display: block;
+    float: right;
+    border: none;
+    outline: 0;
+    background: 0 0;
+    background-color: rgb(250, 88, 90);
+    position: absolute;
+    top: 270px;
+    right: 8px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+/* 店铺信息 */
+#main .mainTop .shopInfo {
+    width: 275px;
+    height: 352px;
+    position: absolute;
+    top: 0px;
+    left: 900px;
+    background-color: #fff;
+}
+
+#main .mainTop .shopInfo .shop-title {
+    width: 273px;
+    height: 63px;
+    margin: 1px 0;
+    background: linear-gradient(180deg, #fee44e, #fff 85%, #fff);
+    font-size: 14px;
+    color: #43240c;
+    text-align: center;
+    line-height: 63px;
+}
+
+#main .mainTop .shopInfo .shopphoto {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 66px;
+}
+
+#main .mainTop .shopInfo p {
+    width: 275px;
+    height: 25px;
+    float: left;
+    margin-left: 66px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#main .mainTop .shopInfo .shop-score {
+    width: 168px;
+    height: 44px;
+    float: left;
+    margin-left: 76px;
+    margin-top: 5px;
+}
+#main .mainTop .shopInfo .shop-score ul{
+    display: flex;
+    justify-content: space-between
+}
+#main .mainTop .shopInfo .shop-score .score{
+    color: #fb9547;
+}
+#main .mainTop .shopInfo .shop-score ul li{
+    flex: 1;
+}
+
+#main .productImg {
+    width: 1200px;
+    height: 100%;
+}
+
+
+/* 回到顶部 */
+#toTop {
+    width: 60px;
+    height: 64px;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    bottom: 315px;
+}
+
+#toTop img {
+    width: 60px;
+    height: 60px;
+}
+
+/* 页脚 */
+#footer {
+    width: 100%;
+    height: 240px;
+    background: #000;
+    opacity: .706;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    margin-top: 81px;
+    float: left;
+}
+
+/* 页脚上部 */
+#footer .footer-top {
+    width: 100%;
+    height: 160px;
+}
+
+#footer .footer-top img {
+    width: 112px;
+    height: 112px;
+    float: left;
+    margin: 37px 19px 0 40px;
+    margin-right: 19px;
+}
+
+#footer .footer-top .footer-word {
+    width: 144px;
+    height: 97px;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 200px;
+    float: left;
+}
+
+/* 页脚下部 */
+#footer .footer-top .footer-word h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-word p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#footer .container .footer-top .loadCenter {
+    width: 144px;
+    height: 80px;
+    text-align: center;
+    float: left;
+    margin-top: 45px;
+    padding-top: 40px;
+}
+
+#footer .container .footer-top .loadCenter a {
+    color: #fff;
+    font-size: 20px;
+}
+
+#footer .footer-bottom {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+#footer .footer-bottom :nth-child(1) {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+#footer .footer-bottom :nth-child(3) {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    left: 720px;
+}
+
+#footer .footer-bottom :nth-child(2) {
+    font-size: 18px;
+    position: absolute;
+    top: 22px;
+    left: 224px;
+}

@@ -1,0 +1,281 @@
+@charset "utf-8";
+*{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #707070;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #707070;
+}
+p{
+    line-height: 22px;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+textarea{
+    outline: none;
+}
+#logo{
+    width: 400px;
+    height: 60px;
+    float: left;
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    opacity: 0.8;
+}
+#logo h3{
+    width: 120px;
+    height: 70px;
+    float: left;
+    margin-left: 20px;
+    line-height: 100px;
+    font-size: 28px;
+    color: #43200c;;
+
+}
+#logo span{
+    line-height: 140px;
+    padding-top: 10px;
+    height: 50px;
+    font-size: 26px;
+    display: block;
+    float: right;
+    color: greenyellow;
+}
+.header{
+    width: 990px;
+    height: 100px;
+    margin-top: 10px;
+    margin: auto;
+}
+.warning-wrap{
+    background-color: #FFF7EC;
+}
+.warning-wrap .warning{
+    /*height: 38px;*/
+    margin: 0;
+    /*vertical-align: middle;*/
+}
+.warning-wrap .warning p{
+    margin: 0;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+
+
+}
+.login-wrap{
+    height: 575px;
+    background-color: #FAC5B3;
+    background-image: url(../images/loginImg.jpg);
+
+}
+.login-wrap .content{
+    height: 475px;
+    /*background-color: #F6B9A6;*/
+    /**/
+}
+.login-wrap .content .login-form{
+    width: 346px;
+    height:450px;
+    background-color: #FFFFFF;
+    margin-top: 50px;
+    position: relative;
+    overflow: visible;
+    float: right;
+    top: 10px;
+    opacity: 0.9;
+    /**/
+}
+
+.login-wrap .content .login-form .login-box {
+    border-bottom: 1px solid #ddd;
+}
+.login-wrap .content .login-form .login-plus {
+    border-top: 1px solid #ddd;
+}
+.login-plus ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*padding-top: 15px;*/
+}
+#logon{
+    cursor: pointer;
+}
+.login-wrap .content .login-form .login-box .login-way{
+    font-size: 18px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*padding-top: 20px;*/
+    line-height: 50px;
+    font-weight: bold;
+}
+.login-form .logon-btn{
+    height: 32px;
+    background-color: #F0700E;
+    /*margin-top: 30px;*/
+    width: 100%;
+}
+.login-form .logon-btn {
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    padding-top: 2px;
+    /*vertical-align: middle;*/
+    height: 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.login-form .itxt{
+    height: 38px;
+    line-height: 18px;
+    border: 1px solid #CCC;
+    width: 254px;
+    /*float: none;*/
+    font-size: 15px;
+    padding: 0;
+    padding-left: 15px;
+    overflow: hidden;
+}
+.login-form .itxt-icon{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #CCC;
+    border-right: 0;
+    background-color: #EFEFEF;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+}
+#P{
+    width: 300px;
+    height: 18px;
+    font-size: 14px;
+    color: red;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-r{
+    color: #DB212E;
+}
+.footer{
+    width: 990px;
+    height: 86px;
+    position: relative;
+    margin: 0 auto;
+    /*margin: 0 auto;*/
+}
+.footer .footer-links{
+    /*width: 100%;*/
+    /*height: 20px;*/
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*align-items: center;*/
+}
+.footer a{
+    margin-left: 10px;
+    margin-right: 8px;
+    color: #707070;
+    font-size: 14px;
+}
+.footer a:hover{
+    color: #DB212E;
+    text-decoration: underline;
+}
+#logontitle{
+    width: 240px;
+    text-align: center;
+}
+/* .footer span{
+    
+} */
+.w{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F3720D;
+}
+.Y{
+    width: 990px;
+    margin:0 auto;
+}
+.w100p{
+    width: 100%;
+    margin: 0 auto;
+}
+.right-link{
+    margin: 0;
+    /*padding: 12px;*/
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.w90p{
+    width: 90%;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.fs10{
+    font-size: 10px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.tc{
+    display: table-cell;
+}
+.pt10{
+    padding-top: 10px;
+}
+.pt15{
+    padding-top: 15px;
+}
+
+.pl20{
+    padding-left: 20px;
+}
+.pr20{
+    padding-right: 20px;
+}
+.h50{
+    height: 50px;
+}
+.h40{
+    height: 40px;
+}
+.h32{
+    height: 32px;
+}
+.h252{
+    height: 252px;
+}

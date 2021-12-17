@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊猫优选</title>
+    <!-- 引入CSS重置样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./font/font_opuvps5hso/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- 引入CSS主页样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 顶部搜索 -->
+    <div id="top" class="container">
+        <!-- 左边logo部分 -->
+        <section class="logo">
+            <a href="#">
+                <img src="./images/logo.png" title="返回首页" alt="logo">
+            </a>
+            <div class="right">
+                <h3>熊猫优选</h3>
+                <span>XIONG MAO YOU XUAN</span>
+            </div>
+        </section>
+        <!-- 中间搜索部分 -->
+        <section class="top-search">
+            <div class="search">
+                <img src="./images/search.png" alt="搜索">
+                <input type="text" placeholder="搜索商品，发现更多优惠">
+                <div class="btn">搜索</div>
+            </div>
+        </section>
+        <!-- 右边品质部分 -->
+        <section class="benefit">
+            <ul>
+                <li>
+                    <img src="./images/baoyou.png" alt="全程包邮">
+                    <span>全程包邮</span>
+                </li>
+                <li>
+                    <img src="./images/tuihuan.png" alt="7天退换">
+                    <span>7天退换</span>
+                </li>
+                <li>
+                    <img src="./images/pinzhi.png" alt="品质保证">
+                    <span>品质保证</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- 导航 -->
+    <div class="nav">
+        <ul class="container">
+            <li class="active">
+                首页
+            </li>
+            <li>
+                9块9包邮
+            </li>
+            <li>
+                超值大额券
+            </li>
+            <li>
+                降温急救穿搭
+            </li>
+        </ul>
+    </div>
+    <!-- 主体内容 -->
+    <div id="main" class="container">
+        <!-- 左边二级导航部分 -->
+        <div class="secondNav">
+            <ul>
+                <li><span class="iconfont icon-nvxie"></span>&nbsp;<a href="">女装/女鞋</a></li>
+                <li><span class="iconfont icon-nanxie"></span>&nbsp;<a href="">男装/男鞋</a></li>
+                <li><span class="iconfont icon-meizhuang"></span>&nbsp;<a href="">美妆/个护</a></li>
+                <li><span class="iconfont icon-baobao"></span>&nbsp;<a href="">配饰/箱包</a></li>
+                <li><span class="iconfont icon-lingshi"></span>&nbsp;<a href="">零食王国</a></li>
+                <li><span class="iconfont icon-weibiaoti2fuzhi05"></span>&nbsp;<a href="">母婴用品</a></li>
+                <li><span class="iconfont icon-shouji"></span>&nbsp;<a href="">手机/数码</a></li>
+                <li><span class="iconfont icon-neiyi"></span>&nbsp;<a href="">内衣袜子</a></li>
+                <li><span class="iconfont icon-jiaju"></span>&nbsp;<a href="">文娱/家居</a></li>
+            </ul>
+        </div>
+        <!-- 右边轮播部分 -->
+        <div class="banner-container">
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <script type="text/html" id="banner-list-temp">
+                            {{ each bannerList}}
+                            <div class="swiper-slide"><img src="{{$value.imageUrl}}" alt=""></div>
+                            {{ /each}}
+                        </script>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+
+                <div class="banner-right">
+                    <h3>9块9包邮</h3>
+                    <div class="right-nine">保你不吃亏</div>
+                    <img src="http://img1.lukou.com/static/coupon/p/image_link/Q34r2F1uSePMh64rnVsuidyw1Q7gWi0W.gif"
+                        alt="">
+
+                </div>
+            </div>
+            <div class="banner-bottom">
+                <div class="banner-bottom-left">
+                    <script type="text/html" id="banner-bottom-temp">
+                        {{ each newBannerBottomList}}
+                        <div class="wear">
+                            <h3>{{$value.title}}</h3>
+                            <p>{{$value.text}}</p>
+                            <span>GO</span>
+                            <img src="{{$value.imageUrl}}" alt="">
+                        </div>
+                        <!-- <div class="ticket">
+                    <h3>超值大额券</h3>
+                    <p>优惠直击底价</p>
+                    <span>GO</span>
+                    <img src="http://img1.lukou.com/static/p/commodity/img/20181212-235507.png" alt="">
+                </div> -->
+                        {{ /each}}
+                    </script>
+                </div>
+                <div class="code">
+                    <p>扫码下载APP</p>
+                    <p>发现更多惊喜</p>
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                </div>
+
+            </div>
+        </div>
+        <!-- 商品列表标题 -->
+        <div class="product-title">
+            <h3>小编精选</h3>
+            <p>每天更新</p>
+        </div>
+        <!-- 商品列表详情 -->
+        <div class="product-list">
+            <ul class="productDetails">
+                <script type="text/html" id='product-list-temp'>
+                    {{ each productList}}
+                    <li class="items">
+                        <div>
+                            <img src="{{$value.image}}" alt="">
+                        </div>
+                        <div class="cardBox">
+                            <div class="productCard-title">
+                                {{$value.title}}
+                            </div>
+                            <div class="cardWord">
+                                <span class="tMall">天猫</span>
+                                <span class="postage">包邮</span>
+                            </div>
+                            <div class="cardBottom">
+                                <div class="cardBottom-left">
+                                    <span class="price">
+                                        <span class="price-tag">￥</span>
+                                        <span class="price-big">{{$value.price}}</span>
+                                        <!-- <span class="price-small">.9</span> -->
+                                    </span>
+                                    <span class="saleNumber">{{$value.saleNum}}人已买</span>
+                                </div>
+                                <div class="twoTicket">{{$value.couponValue}}</div>
+                                <span class="iconfont icon-gouwugouwuchedinggou" id="cart-font"></span>
+                            </div>
+                        </div>
+                    </li>
+                    {{ /each}}
+                </script>
+            </ul>
+            <div class="more">
+                <div class="more-btn">查看更多</div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 回到顶部 -->
+    <div id="toTop">
+        <img src="data:image/png;base64,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"
+            alt="">
+    </div>
+    <!-- 页脚 -->
+    <div id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <img src="http://img1.lukou.com/static/img/activity/icon.png" alt="">
+                <div class="footer-word">
+                    <h1>熊猫优选</h1>
+                    <p>
+                        年轻人网购首选
+                        <br>
+                        购物领券更省钱
+                    </p>
+                </div>
+                <div class="loadCenter">
+                    <a href="#">丨下载APP</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="http://img1.lukou.com/static/img/activity/policeIcon.png" alt="" class="one">
+                <p>浙公安网备案 33010602009949号 | 浙ICP备17012864号-1 | </p>
+                <img src="http://img1.lukou.com/static/img/activity/license.png" alt="" class="two">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/template-web.js"></script>
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./js/axios.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
